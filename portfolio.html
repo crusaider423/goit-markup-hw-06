@@ -17,24 +17,25 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>Document</title>
   </head>
   <body>
     <!--? Header -->
     <header class="header">
-      <div class="container container-header">
+      <div class="container">
         <nav class="nav">
           <a href="./index.html" class="logo link"
             >Web<span class="logo-span">Studio</span></a
           >
           <ul class="nav-list list">
             <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-ref link">Studio</a>
+              <a href="./index.html" class="nav-list-ref link current"
+                >Studio</a
+              >
             </li>
             <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-list-ref link current"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="nav-list-ref link">Portfolio</a>
             </li>
             <li class="nav-list-item">
               <a href="" class="nav-list-ref link">Contacts</a>
@@ -55,6 +56,17 @@
             </li>
           </ul>
         </address>
+
+        <button
+          type="button"
+          class="header-mobile-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-mobile-icon" width="32px" height="22px">
+            <use href="./images/icons.svg#icon-mobile-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--? Main  -->
@@ -338,7 +350,7 @@
               <input
                 type="email"
                 name="email"
-                class="foter-input-email"
+                class="footer-input-email"
                 placeholder="E-mail"
               />
             </label>
@@ -353,5 +365,72 @@
         </div>
       </div>
     </footer>
+    <!-- ? ---------------------------------Mobile-menu----------------------------------------------->
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="mobile-btn-close js-close-menu"
+        data-modal-close
+      >
+        <svg width="8" height="8" class="modal-icon">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <!-- ---------------------------------------------------------- -->
+      <ul class="mobile-menu list">
+        <li><a href="./index.html" class="mobile-nav-ref link">Studio</a></li>
+        <li>
+          <a href="./portfolio.html" class="mobile-nav-ref link">Portfolio</a>
+        </li>
+        <li><a href="" class="mobile-nav-ref link">Contacts</a></li>
+      </ul>
+      <!-- ---------------------------------------------------------- -->
+      <div class="mobile-social-wrap">
+        <ul class="mobile-address list">
+          <li class="mobile-address-item">
+            <a href="tel:+110001111111" class="mobile-address-ref link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-address-item">
+            <a href="mailto:info@devstudio.com" class="mobile-address-ref link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <!-- ----------------------------------------------------------- -->
+        <ul class="mobile-social-list list">
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-ref link">
+              <svg class="mobile-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-ref link">
+              <svg class="mobile-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-ref link">
+              <svg class="mobile-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="" class="mobile-social-ref link">
+              <svg class="mobile-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
