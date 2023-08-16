@@ -2,6 +2,14 @@
   .container {
     max-width: 426px;
   }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .mobile-address-ref[href="tel:+110001111111"] {
+    font-size: 36px;
+  }
 }
 /* !------media 768----------------------------------------------------------------------------------------- */
 
@@ -40,6 +48,12 @@
         ),
         url(../images/people-office-tab-2x.jpg);
     }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
   }
 
   /* *------------featurs------------- */
