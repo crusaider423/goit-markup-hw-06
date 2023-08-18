@@ -619,7 +619,8 @@ input {
   display: flex;
   gap: 24px;
   margin-bottom: 72px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
 }
 
 .filter-list-item {
@@ -659,12 +660,6 @@ input {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
-  row-gap: 48px;
-}
-
-.gallery-cover-wrap {
-  position: relative;
-  overflow: hidden;
 }
 
 .gallery-ref {
@@ -676,6 +671,11 @@ input {
 .gallery-ref:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.gallery-cover-wrap {
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery-iteractive-text {
@@ -706,7 +706,7 @@ input {
 
 .gallery-subtitle {
   color: var(--navi_blue);
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -993,7 +993,7 @@ input {
   justify-content: space-between;
   padding: 80px 35px 40px 40px;
   overflow: auto;
- }
+}
 
 .mobile-menu-container.is-open {
   transform: translateX(0);
