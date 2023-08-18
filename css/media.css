@@ -153,8 +153,7 @@
   }
 
   .gallery-list {
-    row-gap: 72px;
-    row-gap: 48px;
+    gap: 72px 24px;
   }
 
   .gallery-list-item {
